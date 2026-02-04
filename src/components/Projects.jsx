@@ -5,7 +5,7 @@ const projects = [
         link: "https://github.com/sevvalkarahan/CV_creation_page_with_next.js"
     },
     {
-        title: "Basitleştirilmiş E-Ticaaret Uygulması",
+        title: "Basitleştirilmiş E-Ticaret Uygulması",
         tech: "React + Redux Toolkit",
         link: "https://github.com/sevvalkarahan/E-ticaret"
     },

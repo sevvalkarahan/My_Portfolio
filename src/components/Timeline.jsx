@@ -13,7 +13,7 @@ const timelineData = [
         year: "2023",
         title: "Frontend Developer Stajyeri",
         place: "Habertürk",
-        desc: "HTML, CSS, JavaScript veReact kullanarak ön uç odaklı projelerde çalıştım.",
+        desc: "HTML, CSS, JavaScript ve React kullanarak ön uç odaklı projelerde çalıştım.",
     },
     {
         year: "2025",
