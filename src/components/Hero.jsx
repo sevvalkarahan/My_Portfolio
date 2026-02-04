@@ -4,7 +4,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 export default function Hero() {
     return (
-        <section className="h-screen flex flex-col md:flex-row items-center justify-between px-10">
+        <section className="h-screen flex flex-col md:flex-row items-center justify-between px-10 relative top-16">
 
             {/* TEXT */}
             <div className="z-10 max-w-xl">
