@@ -1,16 +1,39 @@
-# React + Vite
+# 🌐 Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hi! I’m **Sevval Karahan**, a Computer Engineering student and Frontend Developer.  
+This is my personal portfolio website built with **React / Next.js** to showcase my projects, skills, and experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## React Compiler
+🔗 https://your-portfolio-link.vercel.app
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🌌 Modern Hero Section (Particles + Glass UI + Typewriter effect)
+- 📊 Skills Dashboard with interactive charts
+- 🧑‍💻 Projects showcase with live demo & GitHub links
+- 📄 Downloadable CV
+- 🤖 AI Chatbot integration
+- 📬 Contact form with EmailJS / Backend API
+- 🌙 Dark / Light mode
+- 📱 Fully responsive design
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React, Next.js, Tailwind CSS
+- **Animations:** Framer Motion
+- **Charts:** Recharts
+- **Particles:** react-tsparticles
+- **Typewriter:** react-simple-typewriter
+- **Email:** EmailJS / Nodemailer
+- **Deployment:** Vercel
+
+---
+
+## 📂 Project Structure
