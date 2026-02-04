@@ -7,7 +7,7 @@ This is my personal portfolio website built with **React / Next.js** to showcase
 
 ## 🚀 Live Demo
 
-🔗 https://your-portfolio-link.vercel.app
+🔗 https://my-portfolio-mu-one-99.vercel.app/
 
 ---
 
