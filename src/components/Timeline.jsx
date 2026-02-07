@@ -35,7 +35,7 @@ export default function Timeline() {
 
 
             <h2 className="text-4xl font-bold mb-16 text-center">Journey</h2>
-            <div className="absolute inset-0 timeline-glow blur-3xl"></div>
+
 
             <div className="max-w-4xl mx-auto relative border-l border-white/20">
                 <div className="absolute inset-0 timeline-glow blur-3xl"></div>
@@ -48,10 +48,10 @@ export default function Timeline() {
                         className="mb-12 ml-6"
                     >
 
-                        <span className="absolute -left-3 w-6 h-6 bg-purple-500 rounded-full"></span>
+                        <span className="absolute -left-3 w-6 h-6 bg-[var(--primary)] rounded-full"></span>
 
                         <div className="bg-white/10 backdrop-blur-xl p-6 rounded-xl border border-white/10">
-                            <p className="text-sm text-purple-400">{item.year}</p>
+                            <p className="text-sm text-[var(--primary)]">{item.year}</p>
                             <h3 className="text-xl font-bold mt-1">{item.title}</h3>
                             <p className="text-white/70">{item.place}</p>
                             <p className="mt-3 text-white/80">{item.desc}</p>
@@ -61,9 +61,7 @@ export default function Timeline() {
             </div>
             <div className="absolute inset-0 cv-glow blur-3xl"></div>
 
-            <div className="text-center mt-16">
-                <DownloadCV />
-            </div>
+
         </section>
     );
 }

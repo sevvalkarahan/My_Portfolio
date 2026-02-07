@@ -7,44 +7,49 @@ export default function Navbar() {
     const [open, setOpen] = useState(false);
 
     return (
-        <nav className="fixed top-0 w-full backdrop-blur-xl bg-white/10 border-b border-white/10 z-50">
-            <div className="flex justify-between items-center px-6 py-4">
+        <nav className="fixed top-0 w-full backdrop-blur-xl bg-[var(--card)] border-b border-[var(--border)] px-6 py-4 z-50">
+            <div className="max-w-7xl mx-auto flex justify-between items-center">
 
-                {/* LOGO */}
-                <h1 className="font-bold text-xl">Şevval Karahan</h1>
+                {/* Logo */}
+                <h1 className="font-bold text-xl text-white">Şevval Karahan</h1>
 
-                {/* DESKTOP MENU */}
-                <div className="hidden md:flex items-center gap-6">
-                    <a href="/" className="hover:text-purple-400">Home</a>
-                    <a href="#about" className="hover:text-purple-400">About</a>
-                    <a href="#projects" className="hover:text-purple-400">Projects</a>
-                    <a href="#contact" className="hover:text-purple-400">Contact</a>
+                {/* Desktop Menu */}
+                <div className="hidden md:flex items-center gap-6 text-[--muted]">
+                    <a className="hover:text-[var(--primary)] transition" href="/">Home</a>
+                    <a className="hover:text-[var(--primary)] transition" href="#about">About</a>
+                    <a className="hover:text-[var(--primary)] transition" href="#projects">Projects</a>
+                    <a className="hover:text-[var(--primary)] transition" href="#contact">Contact</a>
 
-                    <button onClick={() => setDark(!dark)}>
+                    <button
+                        onClick={() => setDark(!dark)}
+                        className="text-[--primary] hover:text-[--accent] transition"
+                    >
                         {dark ? <FaSun /> : <FaMoon />}
                     </button>
                 </div>
 
-                {/* MOBILE MENU BUTTON */}
+                {/* Mobile Hamburger Button */}
                 <button
-                    className="md:hidden text-xl"
                     onClick={() => setOpen(!open)}
+                    className="md:hidden text-white text-xl"
                 >
                     {open ? <FaTimes /> : <FaBars />}
                 </button>
             </div>
 
-            {/* MOBILE MENU */}
+            {/* Mobile Menu */}
             {open && (
-                <div className="md:hidden flex flex-col bg-black/80 backdrop-blur-xl px-6 py-4 space-y-4">
-                    <a onClick={() => setOpen(false)} href="/" className="hover:text-purple-400">Home</a>
-                    <a onClick={() => setOpen(false)} href="#about" className="hover:text-purple-400">About</a>
-                    <a onClick={() => setOpen(false)} href="#projects" className="hover:text-purple-400">Projects</a>
-                    <a onClick={() => setOpen(false)} href="#contact" className="hover:text-purple-400">Contact</a>
+                <div className="md:hidden bg-[--card] border-t border-white/10 mt-4 p-6 flex flex-col gap-4 text-[--muted]">
+                    <a onClick={() => setOpen(false)} href="/">Home</a>
+                    <a onClick={() => setOpen(false)} href="#about">About</a>
+                    <a onClick={() => setOpen(false)} href="#projects">Projects</a>
+                    <a onClick={() => setOpen(false)} href="#contact">Contact</a>
 
-                    <button onClick={() => setDark(!dark)} className="flex items-center gap-2">
-                        {dark ? <FaSun /> : <FaMoon />}
-                        Theme
+                    <button
+                        onClick={() => setDark(!dark)}
+                        className="flex items-center gap-2 text-[--primary]"
+                    >
+                        {dark ? <FaSun /> : <FaMoon />} Theme
                     </button>
                 </div>
             )}

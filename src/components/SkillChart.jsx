@@ -19,7 +19,7 @@ export default function SkillsProgress() {
                         <p className="mb-1 font-semibold">{s.name}</p>
                         <div className="w-full bg-white/10 rounded-full h-3">
                             <div
-                                className="bg-gradient-to-r from-purple-500 to-pink-500 h-3 rounded-full"
+                                className="bg-[var(--primary)] h-3 rounded-full"
                                 style={{ width: `${s.level}%` }}
                             ></div>
                         </div>

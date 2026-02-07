@@ -40,11 +40,11 @@ export default function Projects() {
                 {projects.map((p, index) => (
                     <div
                         key={index}
-                        className="bg-white/10 backdrop-blur-xl p-6 rounded-2xl border border-white/10 hover:scale-105 transition"
+                        className="backdrop-blur-xl p-6 rounded-2xl bg-[var(--card)] border border-[var(--border)] hover:scale-105 transition"
                     >
                         <h3 className="text-xl font-bold">{p.title}</h3>
                         <p className="mt-2 text-white/70">{p.tech}</p>
-                        <button className="py-3 px-2 mt-3 rounded-2xl bg-gradient-to-r from-purple-400 to-pink-500 shadow-2xl hover:scale-90 transition">
+                        <button className="py-3 px-2 mt-3 rounded-2xl bg-[var(--primary)] shadow-2xl hover:scale-90 transition">
                             <a href={p.link}>Projeye git</a>
                         </button>
                     </div>

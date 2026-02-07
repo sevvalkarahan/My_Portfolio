@@ -37,14 +37,14 @@ export default function Contact() {
                 {/* FORM */}
                 <form
                     onSubmit={sendEmail}
-                    className="bg-white/10 backdrop-blur-xl p-8 rounded-2xl border border-white/10 space-y-4"
+                    className=" backdrop-blur-xl p-8 rounded-2xl bg-[var(--card)] border border-[var(--border)] space-y-4"
                 >
                     <input
                         name="name"
                         value={form.name}
                         onChange={handleChange}
                         placeholder="Your Name"
-                        className="w-full p-3 bg-black border border-white/20 rounded"
+                        className="w-full p-3  border bg-[#020617] border-[var(--border)] rounded"
                         required
                     />
 
@@ -53,7 +53,7 @@ export default function Contact() {
                         value={form.email}
                         onChange={handleChange}
                         placeholder="Your Email"
-                        className="w-full p-3 bg-black border border-white/20 rounded"
+                        className="w-full p-3  border bg-[#020617] border-[var(--border)] rounded"
                         required
                     />
 
@@ -63,11 +63,11 @@ export default function Contact() {
                         onChange={handleChange}
                         placeholder="Your Message"
                         rows="4"
-                        className="w-full p-3 bg-black border border-white/20 rounded"
+                        className="w-full p-3  border bg-[#020617] border-[var(--border)] rounded"
                         required
                     />
 
-                    <button className="w-full bg-gradient-to-r from-purple-500 to-pink-500 p-3 rounded-xl font-bold">
+                    <button className="w-full bg-[var(--primary)] p-3 rounded-xl font-bold">
                         Send Message
                     </button>
 
