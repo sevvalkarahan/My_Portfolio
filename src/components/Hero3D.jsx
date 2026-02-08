@@ -5,7 +5,7 @@ function AnimatedSphere() {
     return (
         <Sphere args={[1, 100, 200]} scale={2.2}>
             <MeshDistortMaterial
-                color="#7c3aed"
+                color="#F47E5A"
                 attach="material"
                 distort={0.4}
                 speed={2}
