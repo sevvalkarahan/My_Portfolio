@@ -28,7 +28,7 @@ function Counter({ target }) {
 export default function Stats() {
     return (
         <section className="py-24 px-10 text-center">
-            <div className="max-w-4xl mx-auto flex gap-10 justify-center">
+            <div className="max-w-4xl mx-auto flex flex-col md:flex-row gap-10 justify-center">
 
 
 
